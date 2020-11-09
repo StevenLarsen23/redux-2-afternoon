@@ -32,7 +32,6 @@ class Budget extends Component {
           <Nav firstName={firstName} lastName={lastName} />
           <div className="content-container">
             <div className="purchases-container">
-              // USE PROPS TO PASS DOWN addPurchase AND removePurchase FUNCTIONS
               <AddPurchase addPurchase={this.props.addPurchase} />
               <DisplayPurchases
                 purchases={purchases}
