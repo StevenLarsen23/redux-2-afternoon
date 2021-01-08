@@ -9,7 +9,7 @@ import Nav from "./../shared/Nav";
 import "./Budget.css";
 import { connect } from "react-redux";
 import { requestUserData } from "./../../redux/userReducer";
-//IMPORT THE addPurchase AND removePurchase ACTION CREATORS
+
 import {
   requestBudgetData,
   addPurchase,
@@ -56,7 +56,7 @@ function mapStateToProps(state) {
   };
 }
 
-// ADD addPurchase AND removePurchase TO THE 2ND OBJ ARG IN THE CONNECT METHOD
+
 export default connect(
   mapStateToProps,
   { requestUserData, requestBudgetData, addPurchase, removePurchase }

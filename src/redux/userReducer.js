@@ -22,8 +22,6 @@ export default function reducer(state = initialState, action) {
     case REQUEST_USER_DATA + "_FULFILLED":
       const { email, firstName, lastName } = action.payload.user;
       return { email, firstName, lastName };
-    //   case REQUEST_USER_DATA + "_PENDING":
-    //       return {...state}
     default:
       return state;
   }
